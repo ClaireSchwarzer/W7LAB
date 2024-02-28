@@ -13,5 +13,11 @@ public class FizzBuzzTest {
         assertEquals("Fizz", FizzBuzz.calculate(6));
         assertEquals("Fizz", FizzBuzz.calculate(9));
     }
+    @Test
+    public void whenMultipleOfFiveThenReturnBuzz() {
+        assertEquals("Buzz", FizzBuzz.calculate(5));
+        assertEquals("Buzz", FizzBuzz.calculate(10));
+        assertEquals("Buzz", FizzBuzz.calculate(20));
+    }
 
 }
