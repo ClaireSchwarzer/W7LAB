@@ -25,5 +25,13 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", FizzBuzz.calculate(30));
         assertEquals("FizzBuzz", FizzBuzz.calculate(45));
     }
+    @Test
+    public void whenNotMultipleOfThreeOrFiveThenReturnNumber() {
+        assertEquals("1", FizzBuzz.calculate(1));
+        assertEquals("2", FizzBuzz.calculate(2));
+        assertEquals("4", FizzBuzz.calculate(4));
+        // Add more cases to thoroughly test this scenario
+    }
+
 
 }
