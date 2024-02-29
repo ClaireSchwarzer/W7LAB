@@ -19,5 +19,11 @@ public class FizzBuzzTest {
         assertEquals("Buzz", FizzBuzz.calculate(10));
         assertEquals("Buzz", FizzBuzz.calculate(20));
     }
+    @Test
+    public void whenMultipleOfBothThreeAndFiveThenReturnFizzBuzz() {
+        assertEquals("FizzBuzz", FizzBuzz.calculate(15));
+        assertEquals("FizzBuzz", FizzBuzz.calculate(30));
+        assertEquals("FizzBuzz", FizzBuzz.calculate(45));
+    }
 
 }
